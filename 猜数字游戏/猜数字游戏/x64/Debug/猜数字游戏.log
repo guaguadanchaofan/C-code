@@ -1,0 +1,4 @@
+﻿  test.c
+D:\CODE\guagua-code-library\猜数字游戏\猜数字游戏\test.c(18,12): warning C4013: “rand”未定义；假设外部返回 int
+D:\CODE\guagua-code-library\猜数字游戏\猜数字游戏\test.c(42,2): warning C4013: “srand”未定义；假设外部返回 int
+  猜数字游戏.vcxproj -> D:\CODE\guagua-code-library\猜数字游戏\x64\Debug\猜数字游戏.exe
