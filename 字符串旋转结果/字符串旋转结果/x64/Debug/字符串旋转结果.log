@@ -1,4 +1,2 @@
 ﻿  test.c
-D:\CODE\guagua-code-library\字符串旋转结果\字符串旋转结果\test.c(10,21): warning C4047: “函数”:“const char *”与“int (__cdecl *)(const char *,char *)”的间接级别不同
-D:\CODE\guagua-code-library\字符串旋转结果\字符串旋转结果\test.c(10,21): warning C4024: “strstr”: 形参和实参 2 的类型不同
   字符串旋转结果.vcxproj -> D:\CODE\guagua-code-library\字符串旋转结果\x64\Debug\字符串旋转结果.exe
