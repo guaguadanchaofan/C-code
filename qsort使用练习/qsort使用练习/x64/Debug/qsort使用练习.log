@@ -1,0 +1,4 @@
+﻿  test.c
+D:\CODE\guagua-code-library\qsort使用练习\qsort使用练习\test.c(14,27): warning C4090: “函数”: 不同的“const”限定符
+D:\CODE\guagua-code-library\qsort使用练习\qsort使用练习\test.c(14,24): warning C4113: “int (__cdecl *)(void *,void *)”和“_CoreCrtNonSecureSearchSortCompareFunction”的参数列表不同
+  qsort使用练习.vcxproj -> D:\CODE\guagua-code-library\qsort使用练习\x64\Debug\qsort使用练习.exe
