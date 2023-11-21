@@ -1,0 +1,4 @@
+﻿  test.c
+D:\CODE\guagua-code-library\模拟实现strcpy\模拟实现strcpy\test.c(16,2): warning C4133: “return”: 从“int *”到“char *”的类型不兼容
+D:\CODE\guagua-code-library\模拟实现strcpy\模拟实现strcpy\test.c(8,7): warning C4133: “初始化”: 从“char *”到“int *”的类型不兼容
+  模拟实现strcpy.vcxproj -> D:\CODE\guagua-code-library\模拟实现strcpy\x64\Debug\模拟实现strcpy.exe
