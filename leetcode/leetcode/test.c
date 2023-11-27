@@ -66,3 +66,61 @@ void rotate(int* nums, int numsSize, int k) {
         nums[i] = arr[i];
     }
 }
+int removeElement(int* nums, int numsSize, int val) {
+
+    int count = 0;
+
+    for (int i = 0; i < numsSize; i++)
+
+    {
+
+        if (nums[i] != val)
+
+        {
+
+            nums[count] = nums[i];
+
+            count++;
+
+        }
+
+    }
+
+    return count;
+
+}
+int removeDuplicates(int* nums, int numsSize) {
+
+    if (numsSize == 0)
+
+    {
+
+        return 0;
+
+    }
+
+    int fast = 1;
+
+    int slow = 1;
+
+    while (fast < numsSize)
+
+    {
+
+        if (nums[fast] != nums[fast - 1])
+
+        {
+
+            nums[slow] = nums[fast];
+
+            slow++;
+
+        }
+
+        fast++;
+
+    }
+
+    return slow;
+
+}
