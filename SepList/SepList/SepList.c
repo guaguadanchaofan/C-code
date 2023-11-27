@@ -32,10 +32,6 @@ void SepListDstroy(SepList* ps)
 void SepListCheckCapacity(SepList* ps)
 {
 	assert(ps);
-	if (ps == NULL)
-	{
-		return;
-	}
 	if (ps->size == ps->capacity)
 	{ 
 		SepListType* temp =realloc(ps->data,sizeof(SepListType) * (ps->capacity+2));
@@ -52,10 +48,6 @@ void SepListCheckCapacity(SepList* ps)
 void SepListPushBack(SepList* ps, SepListType x)
 {
 	assert(ps);
-	if (ps == NULL)
-	{
-		return;
-	}
 	SepListCheckCapacity(ps);
 	ps->data[ps->size] = x;
 	ps->size++;
@@ -65,10 +57,6 @@ void SepListPushBack(SepList* ps, SepListType x)
 void SepListPopBack(SepList* ps)
 {
 	assert(ps);
-	if (ps == NULL)
-	{
-		return;
-	}
 	if (ps->size > 0)
 	{
 		ps->size--;
@@ -79,10 +67,6 @@ void SepListPopBack(SepList* ps)
 void SepListPrint(SepList* ps)
 {
 	assert(ps);
-	if (ps == NULL)
-	{
-		return;
-	}
 	for (int i = 0; i < ps->size; i++)
 	{
 		printf("%d ", ps->data[i]);
@@ -94,10 +78,6 @@ void SepListPrint(SepList* ps)
 void SepListPushFront(SepList* ps, SepListType x)
 {
 	assert(ps);
-	if (ps == NULL)
-	{
-		return;
-	}
 	SepListCheckCapacity(ps);
 	for (int i = 0; i < ps->size; i++)
 	{
@@ -111,10 +91,6 @@ void SepListPushFront(SepList* ps, SepListType x)
 void SepListPopFront(SepList* ps)
 {
 	assert(ps);
-	if (ps == NULL)
-	{
-		return;
-	}
 	if(ps->size>1)
 	{
 		for (int i = 1; i < ps->size; i++)
@@ -129,10 +105,6 @@ void SepListPopFront(SepList* ps)
 int SepListFind(SepList* ps, SepListType x)
 {
 	assert(ps);
-	if (ps == NULL)
-	{
-		return -1;
-	}
 	for (int i = 0; i < ps->size; i++)
 	{
 		if (ps->data[i] == x)
@@ -148,10 +120,6 @@ void SepListInsert(SepList* ps, size_t pos, SepListType x)
 {
 	assert(ps);
 	assert(pos < ps->size);
-	if (ps == NULL)
-	{
-		return;
-	}
 	SepListCheckCapacity(ps);
 	for (int i = 0; i < ps->size; i++)
 	{
@@ -170,10 +138,6 @@ void SepListErase(SepList* ps, size_t pos)
 {
 	assert(ps);
 	assert(pos < ps->size);
-	if (ps == NULL)
-	{
-		return;
-	}
 	for (int i = 0; i < ps->size-1-pos; i++)
 	{
 		if (ps->size - 1 - i >= pos)
