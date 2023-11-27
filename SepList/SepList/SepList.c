@@ -147,6 +147,7 @@ int SepListFind(SepList* ps, SepListType x)
 void SepListInsert(SepList* ps, size_t pos, SepListType x)
 {
 	assert(ps);
+	assert(pos < ps->size);
 	if (ps == NULL)
 	{
 		return;
@@ -168,6 +169,7 @@ void SepListInsert(SepList* ps, size_t pos, SepListType x)
 void SepListErase(SepList* ps, size_t pos)
 {
 	assert(ps);
+	assert(pos < ps->size);
 	if (ps == NULL)
 	{
 		return;
