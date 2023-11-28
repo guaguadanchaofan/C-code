@@ -124,3 +124,36 @@ int removeDuplicates(int* nums, int numsSize) {
     return slow;
 
 }
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+struct ListNode* removeElements(struct ListNode* head, int val) {
+    if (head == NULL)
+    {
+        return NULL;
+    }
+    struct ListNode* cur = head;
+    struct ListNode* prev = NULL;
+    while (cur)
+    {
+        if (cur->val != val)
+        {
+            prev = cur;
+        }
+        else
+        {
+            if (prev == NULL)
+            {
+                head = head->next;
+            }
+            else
+                prev->next = cur->next;
+        }
+        cur = cur->next;
+    }
+    return head;
+}
