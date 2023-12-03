@@ -1,0 +1,65 @@
+﻿  List.c
+D:\CODE\guagua-code-library\List\List\List.h(12,2): error C2061: 语法错误: 标识符“ListNode”
+D:\CODE\guagua-code-library\List\List\List.h(13,10): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.h(14,1): error C2059: 语法错误:“}”
+D:\CODE\guagua-code-library\List\List\List.h(18,23): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.h(18,23): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.h(18,30): error C2059: 语法错误:“)”
+D:\CODE\guagua-code-library\List\List\List.h(21,24): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.h(21,24): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.h(21,31): error C2059: 语法错误:“)”
+D:\CODE\guagua-code-library\List\List\List.h(24,23): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.h(24,23): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.h(24,32): error C2370: “LTDataType”: 重定义；不同的存储类
+D:\CODE\guagua-code-library\List\List\List.h(7,13): message : 参见“LTDataType”的声明
+D:\CODE\guagua-code-library\List\List\List.h(24,43): error C2146: 语法错误: 缺少“;”(在标识符“x”的前面)
+D:\CODE\guagua-code-library\List\List\List.h(24,44): error C2059: 语法错误:“)”
+D:\CODE\guagua-code-library\List\List\List.c(5,23): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.c(5,23): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.c(5,30): error C2059: 语法错误:“)”
+D:\CODE\guagua-code-library\List\List\List.c(6,1): error C2054: 在“phead”之后应输入“(”
+D:\CODE\guagua-code-library\List\List\List.c(14,24): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.c(14,24): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.c(14,31): error C2059: 语法错误:“)”
+D:\CODE\guagua-code-library\List\List\List.c(15,1): error C2054: 在“phead”之后应输入“(”
+D:\CODE\guagua-code-library\List\List\List.c(27,9): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.c(29,10): error C2065: “ListNode”: 未声明的标识符
+D:\CODE\guagua-code-library\List\List\List.c(29,17): error C2065: “node”: 未声明的标识符
+D:\CODE\guagua-code-library\List\List\List.c(29,28): error C2065: “ListNode”: 未声明的标识符
+D:\CODE\guagua-code-library\List\List\List.c(29,29): error C2059: 语法错误:“)”
+D:\CODE\guagua-code-library\List\List\List.c(30,6): error C2065: “node”: 未声明的标识符
+D:\CODE\guagua-code-library\List\List\List.c(30,8): error C2223: “->x”的左侧必须指向结构/联合
+D:\CODE\guagua-code-library\List\List\List.c(31,6): error C2065: “node”: 未声明的标识符
+D:\CODE\guagua-code-library\List\List\List.c(31,8): error C2223: “->next”的左侧必须指向结构/联合
+D:\CODE\guagua-code-library\List\List\List.c(32,6): error C2065: “node”: 未声明的标识符
+D:\CODE\guagua-code-library\List\List\List.c(32,8): error C2223: “->prev”的左侧必须指向结构/联合
+D:\CODE\guagua-code-library\List\List\List.c(33,13): error C2065: “node”: 未声明的标识符
+D:\CODE\guagua-code-library\List\List\List.c(33,2): warning C4047: “return”:“int *”与“int”的间接级别不同
+D:\CODE\guagua-code-library\List\List\List.c(37,23): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.c(37,23): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.c(37,32): error C2370: “LTDataType”: 重定义；不同的存储类
+D:\CODE\guagua-code-library\List\List\List.h(7,13): message : 参见“LTDataType”的声明
+D:\CODE\guagua-code-library\List\List\List.c(37,43): error C2146: 语法错误: 缺少“;”(在标识符“x”的前面)
+D:\CODE\guagua-code-library\List\List\List.c(37,44): error C2059: 语法错误:“)”
+D:\CODE\guagua-code-library\List\List\List.c(38,1): error C2054: 在“x”之后应输入“(”
+  test.c
+D:\CODE\guagua-code-library\List\List\List.h(12,2): error C2061: 语法错误: 标识符“ListNode”
+D:\CODE\guagua-code-library\List\List\List.h(13,10): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.h(14,1): error C2059: 语法错误:“}”
+D:\CODE\guagua-code-library\List\List\List.h(18,23): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.h(18,23): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.h(18,30): error C2059: 语法错误:“)”
+D:\CODE\guagua-code-library\List\List\List.h(21,24): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.h(21,24): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.h(21,31): error C2059: 语法错误:“)”
+D:\CODE\guagua-code-library\List\List\List.h(24,23): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.h(24,23): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+D:\CODE\guagua-code-library\List\List\List.h(24,32): error C2370: “LTDataType”: 重定义；不同的存储类
+D:\CODE\guagua-code-library\List\List\List.h(7,13): message : 参见“LTDataType”的声明
+D:\CODE\guagua-code-library\List\List\List.h(24,43): error C2146: 语法错误: 缺少“;”(在标识符“x”的前面)
+D:\CODE\guagua-code-library\List\List\List.h(24,44): error C2059: 语法错误:“)”
+D:\CODE\guagua-code-library\List\List\test.c(6,10): error C2065: “ListNode”: 未声明的标识符
+D:\CODE\guagua-code-library\List\List\test.c(6,10): error C2297: “*”: 无效，因为右操作数的类型为“int *”
+D:\CODE\guagua-code-library\List\List\test.c(7,2): warning C4013: “PushBack”未定义；假设外部返回 int
+D:\CODE\guagua-code-library\List\List\test.c(11,2): warning C4013: “PrintList”未定义；假设外部返回 int
+  正在生成代码...
