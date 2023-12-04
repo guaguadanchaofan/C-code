@@ -40,3 +40,6 @@ void ListInsert(ListNode* pos, LTDataType x);
 
 //posÉ¾³ý
 void ListErase(ListNode* pos);
+
+//Á´±íÇå¿Õ
+void ListDestory(ListNode* phead);

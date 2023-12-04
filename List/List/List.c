@@ -80,8 +80,8 @@ void ListPushFront(ListNode* phead, LTDataType x)
 //Í·É¾
 void ListPopFront(ListNode* phead)
 {
-	assert(phead);
 	assert(phead->next != phead);
+	assert(phead);
 	/*ListNode* first = phead->next;
 	ListNode* second = first->next;
 	phead->next = second;
@@ -128,4 +128,18 @@ void ListErase(ListNode* pos)
 	next->prev = prev;
 	free(pos);
 	pos = NULL;
+}
+
+//Á´±íÇå¿Õ
+void ListDestory(ListNode* phead)
+{
+	assert(phead);
+	ListNode* cur = phead->next;
+	while (cur!=phead)
+	{
+		ListNode* next = cur->next;
+		free(cur);
+		cur = next;
+	}
+	free(phead);
 }
