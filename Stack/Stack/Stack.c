@@ -12,7 +12,7 @@ void CheckCapacity(Stack* ps)
 }
 
 //初始化栈
-void SrackInit(Stack* ps)
+void StackInit(Stack* ps)
 {
 	assert(ps);
 	ps->_a = (STDataType*)calloc(STACKSIZE, sizeof(STDataType));
@@ -21,7 +21,7 @@ void SrackInit(Stack* ps)
 }
 
 //入栈
-void SrackPush(Stack* ps,STDataType x)
+void StackPush(Stack* ps,STDataType x)
 {
 	assert(ps);
 	CheckCapacity(ps);
@@ -29,7 +29,7 @@ void SrackPush(Stack* ps,STDataType x)
 	ps->_top++;
 }
 //出栈
-void SrackPop(Stack* ps)
+void StackPop(Stack* ps)
 {
 	assert(ps);
 	if (ps->_top == 0)
@@ -40,7 +40,7 @@ void SrackPop(Stack* ps)
 }
 
 //获取栈顶数据
-STDataType SrackTop(Stack* ps)
+STDataType StackTop(Stack* ps)
 {
 	assert(ps);
 	if (ps->_top == 0)
@@ -52,13 +52,13 @@ STDataType SrackTop(Stack* ps)
 }
 
 //获取栈中元素有效个数
-STDataType SrackSize(Stack* ps)
+STDataType StackSize(Stack* ps)
 {
 	assert(ps);
 	return ps->_top;
 }
 //检测栈是否为空，空为1，非空为0
-STDataType SrackEmpty(Stack* ps)
+STDataType StackEmpty(Stack* ps)
 {
 	assert(ps);
 	if (ps->_top == 0)
@@ -71,7 +71,7 @@ STDataType SrackEmpty(Stack* ps)
 	}
 }
 //销毁栈
-void SrackDestory(Stack* ps)
+void StackDestory(Stack* ps)
 {
 	assert(ps);
 	if (ps->_a)

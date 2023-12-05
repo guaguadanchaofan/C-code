@@ -3,21 +3,21 @@
 void test()
 {
 	Stack s;
-	SrackInit(&s);
-	SrackPush(&s, 1);
-	SrackPush(&s, 2);
-	SrackPush(&s, 3);
-	SrackPush(&s, 4);
-	SrackPush(&s, 5);
-	int size= SrackSize(&s);
+	StackInit(&s);
+	StackPush(&s, 1);
+	StackPush(&s, 2);
+	StackPush(&s, 3);
+	StackPush(&s, 4);
+	StackPush(&s, 5);
+	int size= StackSize(&s);
 	printf("%d \n", size);
-	int num = SrackEmpty(&s);
+	int num = StackEmpty(&s);
 	printf("%d \n", num);
 	while (s._top != 0)
 	{
-		int ret = SrackTop(&s);
+		int ret = StackTop(&s);
 		printf("%d ", ret);
-		SrackPop(&s);
+		StackPop(&s);
 	}
 }
 int main()
