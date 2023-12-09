@@ -1,4 +1,3 @@
-#define  _CRT_SECURE_NO_WARNINGS
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -7,25 +6,35 @@
  *     struct TreeNode *right;
  * };
  */
-
-
-bool isSubtree(struct TreeNode* root, struct TreeNode* subRoot) {
-    if (root == NULL && subRoot == NULL)
+bool isSameTree(struct TreeNode* p, struct TreeNode* q) {
+    if (p == NULL && q == NULL)
     {
         return true;
     }
-    if (root != NULL && subRoot == NULL)
+    if (p != NULL && q == NULL)
     {
         return false;
     }
-    if (root == NULL && subRoot != NULL)
+    if (p == NULL && q != NULL)
     {
         return false;
     }
-    if (root->val == subRoot->val)
+    if (p->val != q->val)
     {
-        return isSubtree(root->left, subRoot->left) && isSubtree(root->right, subRoot->right);
+        return false;
     }
+    return isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
 
+}
+
+bool isSubtree(struct TreeNode* root, struct TreeNode* subRoot) {
+    if (root == NULL)
+    {
+        return false;
+    }
+    if (isSameTree(root, subRoot))
+    {
+        return true;
+    }
     return isSubtree(root->left, subRoot) || isSubtree(root->left, subRoot);
 }
