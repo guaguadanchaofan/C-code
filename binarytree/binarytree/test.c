@@ -87,6 +87,15 @@ BinaryTree* CreateTree(BTDataType x)
 	node->_right = NULL;
 	return node;
 }
+int maxDepth(BinaryTree* root) {
+	if (root == NULL)
+	{
+		return 0;
+	}
+	int leftDepth = maxDepth(root->_left);
+	int rightDepth = maxDepth(root->_right);
+	return leftDepth > rightDepth ? leftDepth + 1 : rightDepth + 1;
+}
 int main()
 {
 	BinaryTree* A = CreateTree('A');
@@ -106,5 +115,6 @@ int main()
 	printf("\n");
 	printf("TreeSize:%d\n", TreeSize(A));
 	printf("TreeLeafSize:%d\n", TreeLeafSize(A));
+	int ret = maxDepth(A);
 	return 0;
 }
