@@ -1,0 +1,6 @@
+#define  _CRT_SECURE_NO_WARNINGS
+
+#include<stdio.h>
+
+//Ï£¶ûÅÅÐò
+void ShellSort(int* a, int n);
