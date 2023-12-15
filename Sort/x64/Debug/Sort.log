@@ -1,0 +1,3 @@
+﻿  test.c
+D:\CODE\guagua-code-library\Sort\test.c(6,8): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  Sort.vcxproj -> D:\CODE\guagua-code-library\Sort\x64\Debug\Sort.exe
